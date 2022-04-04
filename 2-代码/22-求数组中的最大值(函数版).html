@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        arr = [12, 54, 454, 87, 36, 4, 8]
+        max = arr[0]
+
+        function getMax(arr) {
+            for (i = 0; i <= arr.length; i++) {
+                if (max < arr[i]) {
+                    max = arr[i]
+                }
+            }
+            return max;
+        }
+        console.log(getMax(arr));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
