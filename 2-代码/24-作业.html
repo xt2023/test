@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var computer = {
+            color: 'red',
+            weight: 78,
+            brand: 'xioami',
+            type: 'game',
+            ability: function() {
+                console.log('seeMovie');
+            }
+        }
+        console.log(computer.color);
+
+
+
+        var button = new Object();
+        button.width = 10;
+        button.heigth = 52;
+        button.backgraund = 'red';
+        button.click = function() {
+            console.log('red');
+        }
+
+        button.click();
+
+        function Car(weight, color, brand) {
+            this.weight = weight;
+            this.color = color;
+            this.brand = brand;
+
+            this.ab = function(man) {
+                console.log(man);
+            }
+        }
+        var minCar = new Car(54, 'red', '奔驰')
+        console.log(minCar.weight);
+        minCar.ab('wo');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
